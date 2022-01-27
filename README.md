@@ -44,7 +44,13 @@ But overall, we believe in the following assumptions why the project can make th
  
 ## Tentative Timeline
 - In 2 weeks: data collection and cleaning
-    1. [x] establish a database containing all the stock prices and relevant information (valuation multiple, etc.)
-    2. [ ] find a relevant criteria to categorize the stocks (is P/E multiple the best?)
+    - [ ] establish a database containing all the stock prices and relevant information (valuation multiple, economic indicators, etc.)
+    - [ ] find a relevant criteria to categorize the stocks (is P/E multiple the best?)
 - In 4 weeks: organize insights from model and start writing report 
+    - [ ] choose appropriate machine learning models to train the dataset
+    - [ ] study the ouput of the models and generate insights
 - In 6 weeks: finalize the report and clean up code 
+    - [ ] run additional models if necessary
+    - [ ] create visualizations to help our presentation and add insights to the conclusion
+    - [ ] upload our findings and tools to the website
+    - [ ] reflect what can be improved for the project
