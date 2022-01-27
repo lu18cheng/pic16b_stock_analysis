@@ -29,6 +29,6 @@ This project compares the performance of growth stock vs. value stocks over diff
  
 
 ## Tentative Timeline
-In 2 weeks: obtain data and train a preliminary model
-In 4 weeks: organize insights from model and start writing report 
-In 6 weeks: finalize the report and clean up code 
+- In 2 weeks: obtain data and train a preliminary model
+- In 4 weeks: organize insights from model and start writing report 
+- In 6 weeks: finalize the report and clean up code 
