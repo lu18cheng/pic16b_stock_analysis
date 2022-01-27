@@ -34,6 +34,7 @@ There are two things that could potentially stop us from achieving the full deli
 ## Ethics
 The input data mostly consists of past stock prices, economic indicators, and calculated market indices, which are less prone to the risks of bias. As this data is readily available to all investors with Internet access, the project only aims to add an extra layer of information to help individual investors make more educated decisions in the financial market. 
 > Group of people that will likely benefit from this project: retail investors, institutional investors, policy makers, etc.
+
 However, most of the time, the public investing space is a zero-sum game. So,
 > Some individuals and their trading strategies might have already incorporated the patterns and correlations, and the disclosure of such analysis will potentially harm their gains. 
 But overall, we believe in the following assumptions why the project can make the world a better place:
