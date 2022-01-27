@@ -1,4 +1,4 @@
-# pic16b_stock_analysis
+# <font color = blue> pic16b_stock_analysis
 Team Members: Lu Cheng, Samuel Shi
 
 ## Abstract
