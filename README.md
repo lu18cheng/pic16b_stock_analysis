@@ -43,6 +43,8 @@ But overall, we believe in the following assumptions why the project can make th
 2. The findings and conclusions of this project can potentially contribute to the better understanding of how the market works. A study on the correlation with various economic factors can facilitate policy makers to better maintain the efficieny of the market. We assume the efficiency of the economy can make the world a better place because "good products and services" will be allocated with the best resources. 
  
 ## Tentative Timeline
-- In 2 weeks: obtain data and train a preliminary model
+- In 2 weeks: data collection and cleaning
+    1. [x] establish a database containing all the stock prices and relevant information (valuation multiple, etc.)
+    2. [ ] find a relevant criteria to categorize the stocks (is P/E multiple the best?)
 - In 4 weeks: organize insights from model and start writing report 
 - In 6 weeks: finalize the report and clean up code 
