@@ -7,11 +7,11 @@ Growth stock investing and value stock investing have been the most common strat
 ## Planned Deliverables
 An overall interactive website/blog that includes the following content:
 - an informative webpage detailing methodologies, findings and our conclusion. They can be multiple brilliant and complex graphs to demonstrate our results and the weighted stock prices
-- an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly. For instance, there could be a toggle so the website user can choose the specific time horizon: '5 years' '10 years''20 years', or the economic conditions shift: "interest rate increases 0.25%", "GDP growth rate slows down by 0.5%", etc. In short, it will be an interactive model so that users can do various scenario analysis to adjust their portfolio.
+- an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly. For instance, there could be a toggle so the website user can choose the specific time horizon: '5 years' '10 years''20 years', or the economic conditions shift: "interest rate increases 0.25%", "GDP growth rate slows down by 0.5%", etc. In short, it will be an interactive model so that users can do various scenario analysis to adjust their portfolio. 
 
 ## Resources Required
-- Stock data (need a link to data) 
-- Criteria to divide value stock vs growth stocks 
+- Stock prices for the past 50 years from [Yahoo Finance](https://finance.yahoo.com/)
+- Macroeconomic indicators for the past 50 years from [Federal Reserve's website](https://fred.stlouisfed.org/)
 - If the data is large, may also require cloud environment to store data & train machine learning model 
 
 ## Tools and Skills Required
