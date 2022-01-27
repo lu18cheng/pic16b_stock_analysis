@@ -1,4 +1,4 @@
-# pic16b_stock_analysis
+# pic16b_stock_analysis :money_with_wings::money_with_wings::money_with_wings:
 :rocket: Team Members: Lu Cheng, Samuel Shi
 
 ## Abstract
