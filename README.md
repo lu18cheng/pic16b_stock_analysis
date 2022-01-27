@@ -37,6 +37,7 @@ The input data mostly consists of past stock prices, economic indicators, and ca
 
 However, most of the time, the public investing space is a zero-sum game. So,
 > Some individuals and their trading strategies might have already incorporated the patterns and correlations, and the disclosure of such analysis will potentially harm their gains. 
+
 But overall, we believe in the following assumptions why the project can make the world a better place:
 1. More information and statistical analysis will provide more transparency and better decision mechanism to retail investors. We assume investment returns and financial gains are important to them. Arguably, financial freedom is one of the most crucial indicator of happiness. 
 2. The findings and conclusions of this project can potentially contribute to the better understanding of how the market works. A study on the correlation with various economic factors can facilitate policy makers to better maintain the efficieny of the market. We assume the efficiency of the economy can make the world a better place because "good products and services" will be allocated with the best resources. 
