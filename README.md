@@ -1,4 +1,4 @@
-# <font color = blue> pic16b_stock_analysis
+# pic16b_stock_analysis
 Team Members: Lu Cheng, Samuel Shi
 
 ## Abstract
@@ -32,9 +32,14 @@ There are two things that could potentially stop us from achieving the full deli
 2. we have the inherent assumption that macroeconomic factors do have different impacts on the performances of the two stocks. It may turn out that the real world and the real economy is much more complicated and the study on the correlation between the economic indicators (that are subject to our choice) and stock performance will not yield meanningful results. Then our conclusion maybe limited to provide investment guidance for the retail investors. **However, we can try to employ more economic indicators and models to study the coorelation and prevent overfitting.**
 
 ## Ethics
-...
+The input data mostly consists of past stock prices, economic indicators, and calculated market indices, which are less prone to the risks of bias. As this data is readily available to all investors with Internet access, the project only aims to add an extra layer of information to help individual investors make more educated decisions in the financial market. 
+> Group of people that will likely benefit from this project: retail investors, institutional investors, policy makers, etc.
+However, most of the time, the public investing space is a zero-sum game. So,
+> Some individuals and their trading strategies might have already incorporated the patterns and correlations, and the disclosure of such analysis will potentially harm their gains. 
+But overall, we believe in the following assumptions why the project can make the world a better place:
+1. More information and statistical analysis will provide more transparency and better decision mechanism to retail investors. We assume investment returns and financial gains are important to them. Arguably, financial freedom is one of the most crucial indicator of happiness. 
+2. The findings and conclusions of this project can potentially contribute to the better understanding of how the market works. A study on the correlation with various economic factors can facilitate policy makers to better maintain the efficieny of the market. We assume the efficiency of the economy can make the world a better place because "good products and services" will be allocated with the best resources. 
  
-
 ## Tentative Timeline
 - In 2 weeks: obtain data and train a preliminary model
 - In 4 weeks: organize insights from model and start writing report 
