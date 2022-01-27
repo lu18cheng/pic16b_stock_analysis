@@ -1,4 +1,4 @@
 # pic16b_stock_analysis
-. . .
-. X .
-X O .
+. . O
+. X O
+X O O
