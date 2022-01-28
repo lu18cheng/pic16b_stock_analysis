@@ -1,7 +1,6 @@
 # Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
-:fire: Team Name: Litquidity 
-
-:rocket: Team Members: Lu Cheng, Samuel Shi
+:fire: Team Name: Litquidity  
+:rocket: Team Members: Lu Cheng, Samuel Shi  
 
 ## Abstract
 Growth stock investing and value stock investing have been the most common strategies in equity investing, and the debate over their effectiveness has lasted for years. In this project, we will study the past stock prices to compare the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations between their performance and various macroeconomic factors such as interest rates, inflation rate, GDP growth rate, etc. In summary, we hope our project can provide more insights for the retail investors into which strategy is more effective for a given time horizon and under various economic conditions.
@@ -24,8 +23,11 @@ An overall interactive website/blog that includes the following content:
 - Other machine learning models, depending on the eventual analysis, may use various types of regression model 
 
 ## What You Will Learn
-- Version control with git 
-- Time series machine learning models 
+- Version control with and collaboration on git 
+- Database management 
+- Web development and report/blog writing 
+- Data Visualizations
+- Time series machine learning models and the skill to find the most optimal model for different objectives
 - Project management 
 
 ## Risks
@@ -56,3 +58,4 @@ But overall, we believe in the following assumptions why the project can make th
     - [ ] create visualizations to help our presentation and add insights to the conclusion
     - [ ] upload our findings and tools to the website
     - [ ] reflect what can be improved for the project
+
