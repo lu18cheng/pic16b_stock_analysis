@@ -24,10 +24,14 @@ An overall interactive website/blog that includes the following content:
 
 ## What You Will Learn
 - Version control with and collaboration on git 
-- Database management 
+    Each step of the project would be tracked using git and there would be a lot to learn abotu version controls and what to do if there is a conflict with pushing file changes 
+- Database management
+    Since the project would involve many large datasets (Stock prices and macroeconomic indicators for the past 50 years), we would be more familar with databse management at the end of the project 
 - Web development and report/blog writing 
 - Data Visualizations
-- Time series machine learning models and the skill to find the most optimal model for different objectives
+    Practices with multiple types of visualizations would be involved in this project, especially how to make interactive interface for users to do scenario analysis 
+- Machine Learning Modeling
+    We would learn about time series machine learning models for this project as well as the the skills to find the most optimal model for our objectives
 - Project management 
 
 ## Risks
