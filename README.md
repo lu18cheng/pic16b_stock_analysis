@@ -1,5 +1,6 @@
-# Analysis Growth Stocks vs. Value Stocks Peformance :money_with_wings::money_with_wings::money_with_wings:
+# Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
 :fire: Team Name: Litquidity 
+
 :rocket: Team Members: Lu Cheng, Samuel Shi
 
 ## Abstract
