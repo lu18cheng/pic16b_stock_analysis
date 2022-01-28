@@ -23,16 +23,16 @@ An overall interactive website/blog that includes the following content:
 - Other machine learning models, depending on the eventual analysis, may use various types of regression model 
 
 ## What You Will Learn
-- Version control with and collaboration on git 
+- Version control with and collaboration on git   
     Each step of the project would be tracked using git and there would be a lot to learn abotu version controls and what to do if there is a conflict with pushing file changes 
-- Database management
+- Database management  
     Since the project would involve many large datasets (Stock prices and macroeconomic indicators for the past 50 years), we would be more familar with databse management at the end of the project 
-- Web development and report/blog writing 
-- Data Visualizations
+- Web development and report/blog writing   
+- Data Visualizations  
     Practices with multiple types of visualizations would be involved in this project, especially how to make interactive interface for users to do scenario analysis 
-- Machine Learning Modeling
+- Machine Learning Modeling  
     We would learn about time series machine learning models for this project as well as the the skills to find the most optimal model for our objectives
-- Project management 
+- Project management   
 
 ## Risks
 There are two things that could potentially stop us from achieving the full deliverable:
