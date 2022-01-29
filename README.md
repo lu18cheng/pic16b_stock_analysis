@@ -30,9 +30,9 @@ An overall interactive website/blog that includes the following content:
 - Data Visualizations  
     Practices with multiple types of visualizations would be involved in this project, especially how to make interactive interface for users to do scenario analysis 
 - Machine Learning Modeling  
-    We would first analyze the data with general-purpose machine learning modelings such as `TensorFlow`, `Scikit-learn`, etc. Depending on the output of these models, we will experiment packages specialized for time series such as `Prophet`. 
+    We would first analyze the data with general-purpose machine learning models such as `TensorFlow`, `Scikit-learn`, etc. Depending on the output of these models, we will experiment packages specialized for time series such as `Prophet`
 - Web development and report/blog writing 
-    The final deliverable is a webapp, so we will learn how to efficiently and collarborately build a website with relevant packages. Presentation is a key skillset, and this project can be a great opportunity for us to practice presentation in both verbal and writing. 
+    The final deliverable is a webapp, so we will learn how to efficiently and collarborately build a website with relevant packages. Presentation is a key skillset, and this project can be a great opportunity for us to practice presentation in both verbal and writing
 
 ## Risks
 There are two things that could potentially stop us from achieving the full deliverable:
