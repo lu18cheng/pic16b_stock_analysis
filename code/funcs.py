@@ -50,6 +50,7 @@ def load_stocks_dataframe():
     '''
 
     df = pd.read_sql_query(cmd, conn)
+    df['Date'] = pd.to_datetime(df['Date'])
     df['CPI'] = df.CPI.fillna(method = 'ffill', limit = 30)
     df['CPI_PercentChange'] = df.CPI_PercentChange.fillna(method = 'ffill', limit = 30)
     df['CPI_Diff'] = df.CPI_Diff.fillna(method = 'ffill', limit = 30)
