@@ -57,38 +57,9 @@ def main():
 
 # Show url matching
 
-@app.route('/hello/')
-def hello():
-    return render_template('hello.html')
-
-@app.route('/hello/<name>/')
-def hello_name(name):
-    return render_template('hello.html', name=name)
-
-# Page with form
-
-@app.route('/ask/', methods=['POST', 'GET'])
-def ask():
-    if request.method == 'GET':
-        return render_template('ask.html')
-    else:
-        try:
-            return render_template('ask.html', name=request.form['name'], student=request.form['student'])
-        except:
-            return render_template('ask.html')
-
-# File uploads and interfacing with complex Python
-# basic version
-
-@app.route('/submit-basic/', methods=['POST', 'GET'])
-def submit_basic():
-    if request.method == 'GET':
-        return render_template('submit-basic.html')
-    else:
-        try:
-            return render_template('submit-basic.html', thanks = True)
-        except:
-            return render_template('submit-basic.html', error=True)
+@app.route('/reflection/')
+def reflection():
+    return render_template('reflection.html')
 
 @app.route('/submit-advanced/', methods=['POST', 'GET'])
 def submit():
@@ -115,19 +86,16 @@ def submit():
                 )
             )
             
-
             # model prediction
             if type == "value":
                 model = pickle.load(open("../model/mixed_regression_value.pkl",'rb'))
-                
                 result = model.predict(test_data)[0][0]
             else:
                 model = pickle.load(open("../model/mixed_regression_growth.pkl",'rb'))
-                # model = tf.keras.models.load_model('../model/mixed_regression_growth')
-                try:
-                    result = model.predict(test_data)[0][0]
-                except Exception as e:
-                    result = e
-            return render_template('submit.html', result=result)
+                result = model.predict(test_data)[0][0]
+
+            result = "{:.2%}".format(result)
+            
+            return render_template('submit.html', result=result, type = type)
         except:
             return render_template('submit.html', error=True)

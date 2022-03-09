@@ -13,26 +13,37 @@
     <label for="growth">growth</label>
     <br>
     <label for="treasury">What is the percentage change in 10 year treasury yield (enter 0 if no change)?</label>
-    <input type="number" name="treasury" id="treasury" min="-50" max="50" step ="0.1">
+    <input type="number" name="treasury" id="treasury" min="-0.5" max="0.5" step ="0.001">
     <br>
     <label for="inflation">What is the percentage change in inflation rate (enter 0 if no change)?</label>
-    <input type="number" name="inflation" id="inflation"  min="-50" max="50" step ="0.1">
+    <input type="number" name="inflation" id="inflation"  min="-0.5" max="0.5" step ="0.001">
     <br>
     <label for="CPI">What is the percentage change in CPI (enter 0 if no change)?</label>
-    <input type="number" name="CPI" id="CPI"  min="-50" max="50" step ="0.1">
+    <input type="number" name="CPI" id="CPI"  min="-0.5" max="0.5" step ="0.001">
     <br>
     <label for="exchange">What is the percentage change in exchange rate against CAD (enter 0 if no change)?</label>
-    <input type="number" name="exchange" id="exchange"  min="-50" max="50" step ="0.1">
+    <input type="number" name="exchange" id="exchange"  min="-0.5" max="0.5" step ="0.001">
     <br>
     <input type="submit" value="Submit form">
 
+
+
   {% if result %}
     <br>
-    Thanks for the numbers!  It looks like the expected percentage price change is {{result}}.
+    {% if type == "value" %}
+    <br>
+    Thanks for submitting inputs for a value stock! Please be mindful that the error for our validation set fluctuates around 1%.
+    {% else %}
+    <br>
+    Thanks for submitting inputs for a growth stock! Please be mindful that the error for our validation set fluctuates around 1%.
+    {% endif %}
+    <br>
+    According to our model, the expected price change for {{type}} stock is {{result}}.
+    <br>
   {% endif %}
 
   {% if error %}
     <br>
-    Oh no, there are some errors. 
+    Oh no, there are some errors. Please re-enter the inputs. 
   {% endif %}
 {% endblock %}
