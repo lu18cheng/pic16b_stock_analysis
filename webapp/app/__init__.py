@@ -11,6 +11,22 @@ import pickle
 
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
+import tensorflow as tf
+from tensorflow import keras
+
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+# from tensorflow.keras.layers import Input, Dense, Activation,Dropout
+# from tensorflow.keras.models import Model
+# from tensorflow.keras import layers
+# from tensorflow.keras import layers
+# from tensorflow.keras import losses
+
+
+
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 
 import io
 import base64
@@ -73,43 +89,39 @@ def submit_basic():
         except:
             return render_template('submit-basic.html', error=True)
 
-# nontrivial version: makes a prediction and shows a viz
 @app.route('/submit-advanced/', methods=['POST', 'GET'])
 def submit():
     if request.method == 'GET':
         return render_template('submit.html')
     else:
         try:
-            # retrieve the image
-            img = request.files['image']
-            img = np.loadtxt(img)
-            
-            # reshape into appropriate format for prediction
-            x = img.reshape(1, 64)
-            
-            # load up a pre-trained model and get a prediction
-            model = pickle.load(open("mnist-model/model.pkl", 'rb'))
-            d = model.predict(x)[0]
+            # retrieve the necessary data
+            type = request.form['type']
+            treasury = request.form['treasury']
+            inflation = request.form['inflation']
+            CPI = request.form['CPI']
+            exchange = request.form['exchange']
 
-            # plot the image itself
-            fig = Figure(figsize = (3, 3))
-            ax = fig.add_subplot(1, 1, 1,)
-            ax.imshow(img, cmap = "binary")
-            ax.axis("off")
-            
-            # in order to show the plot on flask, we need to do a few tricks
-            # Convert plot to PNG image
-            # need to: 
-            # import io 
-            # import base64 
-            pngImage = io.BytesIO()
-            FigureCanvas(fig).print_png(pngImage)
-            
-            # Encode PNG image to base64 string
-            pngImageB64String = "data:image/png;base64,"
-            pngImageB64String += base64.b64encode(pngImage.getvalue()).decode('utf8')
-            
-            # finally we can render the template with the prediction and image
-            return render_template('submit.html', digit=d, image=pngImageB64String)
+            # prepare for prediction
+            test_data =  tf.data.Dataset.from_tensor_slices(
+                (
+                    {
+                        "Treasury10yr_PercentChange": np.array([treasury]).reshape(-1,1),
+                        "inflation5yr_PercentChange": np.array([inflation]).reshape(-1,1),
+                        "CPI_PercentChange"         : np.array([CPI]).reshape(-1,1),
+                        "exchange_PercentChange"    : np.array([exchange]).reshape(-1,1)
+                    }
+                )
+            )
+
+            # model prediction
+            if type == "value":
+                model = pickle.load(open("../model/mixed_regression_value.pkl",'rb'))
+                result = model.predict(test_data)[0][0]
+            else:
+                model = pickle.load(open("../model/mixed_regression_growth.pkl",'rb'))
+                result = model.predict(test_data)[0][0]
+
+            return render_template('submit.html', result=result)
         except:
             return render_template('submit.html', error=True)
