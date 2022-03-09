@@ -25,7 +25,8 @@ from sklearn.model_selection import train_test_split
 
 
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# tf.autograph.set_verbosity(0)
 
 
 import io
@@ -106,22 +107,27 @@ def submit():
             test_data =  tf.data.Dataset.from_tensor_slices(
                 (
                     {
-                        "Treasury10yr_PercentChange": np.array([treasury]).reshape(-1,1),
-                        "inflation5yr_PercentChange": np.array([inflation]).reshape(-1,1),
-                        "CPI_PercentChange"         : np.array([CPI]).reshape(-1,1),
-                        "exchange_PercentChange"    : np.array([exchange]).reshape(-1,1)
+                        "Treasury10yr_PercentChange": np.array([float(treasury)]).reshape(-1,1),
+                        "inflation5yr_PercentChange": np.array([float(inflation)]).reshape(-1,1),
+                        "CPI_PercentChange"         : np.array([float(CPI)]).reshape(-1,1),
+                        "exchange_PercentChange"    : np.array([float(exchange)]).reshape(-1,1)
                     }
                 )
             )
+            
 
             # model prediction
             if type == "value":
                 model = pickle.load(open("../model/mixed_regression_value.pkl",'rb'))
+                
                 result = model.predict(test_data)[0][0]
             else:
                 model = pickle.load(open("../model/mixed_regression_growth.pkl",'rb'))
-                result = model.predict(test_data)[0][0]
-
+                # model = tf.keras.models.load_model('../model/mixed_regression_growth')
+                try:
+                    result = model.predict(test_data)[0][0]
+                except Exception as e:
+                    result = e
             return render_template('submit.html', result=result)
         except:
             return render_template('submit.html', error=True)
