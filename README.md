@@ -11,5 +11,4 @@ This repository includes all the code to the analysis.
 - `db` folder includes the database we built with the data.
 - `code` folder includes all the code used in our analysis, including code to create database, pull and clean data from database, create visualizations and train various time series, machine learning & deep leanning models. 
 - `Images` folder stores visualizations made in the project 
-- `webapp` includes a flask web app to deploy our results and create an interactive page to help users predict potential stock price changes. 
-
+- `webapp` includes a flask web app to deploy our results and create an interactive page to help users predict potential stock price changes after inputing the percentage change of 10 year treasury yield, exchange rate with Canadian dollars, 5 year inflation rate and CPI. The webapp is currently not deployed on a public domain, but it can be viewed by running `export FLASK_ENV=development; flask run` on the terminal after navigating to the webapp folder. 
