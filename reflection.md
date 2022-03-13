@@ -19,22 +19,30 @@ In the last step, we managed to build a webapp that serves two functions:
 2. an interactive app to tell the users what are some predicted changes to the stock price according to our model. Specifically, users can choose to analyze a value/growth stock, then input the percentage changes of inflation rate, exchange rate against Canadian dollars, and 10 Year Treausry yield, and the program will return a predicted change of the stock price. An example has been included as follows, and we can compare how value and growth stocks can respond to certain macroeconomic changes:
 
 {include an image here}
+<br>
 
 ## II. What are two aspects of your project that you are especially proud of? 
-- **We managed to develop first-hand experiences with stock markets**: 
+- **We managed to utilize data science techniques to develop better understanding of the stock market**: Most of our previous experiences with stock market and investing are qualitative. By finishing this project, we have become more aware of, for stock market analysis, where to collect data, how to process data cleaning, and what are some specific data sciences techniques that are available for such issues. In particular, it confirms our belief that modeling stock markets is indeed challenging. Moreover, it provides a new angle of investing into the secondary markets, and tells us what are some advantages and drawbacks of using data science and machine learning techniques to study the stock market. 
 - **We built an interactive webapp that might impact a user's decision in real life**: we regard a piece of information to be "valuable" if it contributes to an individual's decision in real life, directly or indirectly. The webapp can help retail investors to better understand market dynamics and stock returns with acceptable margins of error *(0.8% for value stocks and 1% for growth stocks)*. Although it can hardly provide direct buy or sell suggestions, it offers a scientific way to examine the impacts of various macroeconomic factors on stock performances. Retail investors or other potential users can develop a better understanding of the correlations and make more informed decisions. 
 
+<br>
 
 ## III. What are two things you would suggest doing to further improve your project?
 There are mainly two areas that we can potentially improve our project: **data collection** and **modeling**.
 - **data collection**: Although we have spent quite amount of time discussing how to and what kind of data to be included in our model, we still feel it is inadequate. Due to time constraint, we chose IVE and IVW as two indices to represent the overall performances of growth stocks and value stocks. One drawback is that both of these indices were created in 2003, which gives us *only around 20 years of data*. In reality, the debate between growth stocks and value stocks dated even before the Great Depression in the 1930s. A more scientific way is to find certain metrics to individually select stocks to construct a portofolio for growth stocks and value stocks respectively since 1930 instead of using generic metrics that only have spanned 20 years. 
 - **modeling**: By trial and error, we can probably find better models that fit our purposes. For instance, SARIMAX and ARIMA might not be the best models for stock markets. Different TSM might be used for short term vs. long term predictions. Additionally, with some literature review, we can potentially find some models tackling similar problems. We can use transfer learning and other methods to improve our accuracy. 
 
+<br>
+
 ## IV. How does what you achieved compare to what you set out to do in your proposal? 
 - We pretty much followed the timeline and goals set in our intial proposal. However, we won't able to obtain an accurate enough model to help us predict the market and provide meaningful insights about how the market responds to changes in macroeconomic indicators. 
 
+<br>
+
 ## V. What are three things you learned from the experience of completing your project? Data analysis techniques? Python packages? Git + GitHub? Etc? 
 - We learned many useful skills through this project, from project management, communication and presentation skills, to version control (github), data base management, data visualization,  machine learning modeling and webdesign
+
+<br>
 
 ## VI. How will your experience completing this project will help you in your future studies or career? Please be as specific as possible. 
 - This experience is helpful to help us prepare for a data science career as it mimics the process of a complete data science project in a real life experience. In actual working setting, we imagine most projects would go through the process of proposal -> data collection & cleaning -> actual analysis -> presentation of results. Version control with git is also a crucial tool in working setting. Moreover, many of the difficulties we encounter in this project could be similar to what we may encounter in real life. Being able to detect where the issues come from and exploring ways to solve it is a useful skill to have when working on industry projects. 
