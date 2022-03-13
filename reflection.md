@@ -23,7 +23,9 @@ In the last step, we managed to build a webapp that delivered two functions:
 ## What are two aspects of your project that you are especially proud of? 
 
 ## What are two things you would suggest doing to further improve your project?
-- Obtain and use data for a longer term (e.g. 50 years instead of 20)to train the model to increase prediction accuracy.
+There are mainly two areas that we can potentially improve our project: **data collection** and **modeling**.
+- **data collection**: Although we have spent quite amount of time discussing how to and what kind of data to be included in our model, we still feel it is inadequate. Due to time constraint, we chose IVE and IVW as two indices to represent the overall performances of growth stocks and value stocks. One drawback is that both of these indices were created in 2003, which gives us *only around 20 years of data*. In reality, the debate between growth stocks and value stocks dated even before the Great Depression in the 1930s. A more scientific way is to find certain metrics to individually select stocks to construct a portofolio for growth stocks and value stocks respectively since 1930 instead of using generic metrics that only have spanned 20 years. 
+- **modeling**: By trial and error, we probably can find better models that fit our purposes. For instance, SARIMAX and ARIMA might not be the best models for stock markets. Different TSM might be used for short term vs. long term predictions. Additionally, with some literature review, we can potentially find some models tackling similar problems. We can use transfer learning and other methods to improve our accuracy. 
 
 ## How does what you achieved compare to what you set out to do in your proposal? 
 - We pretty much followed the timeline and goals set in our intial proposal. However, we won't able to obtain an accurate enough model to help us predict the market and provide meaningful insights about how the market responds to changes in macroeconomic indicators. 
