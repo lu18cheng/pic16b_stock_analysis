@@ -12,7 +12,7 @@ We employed Time Series Modeling (TSM), in particular SARIMAX and ARIMA, to answ
 
 {include an image here}
 
-Since the our neural network tensorflow models have consistently produced mininal Mean Squared Error (MSE) with little evidence of overfitting for both value and growth stocks, we chose to embed them into our webapp for the users to experiment with. 
+Since our neural network models have consistently produced mininal Mean Squared Error (MSE) with little evidence of overfitting for both value and growth stocks, we chose to embed them into our webapp for the users to experiment with. 
 
 In the last step, we managed to build a webapp that delivered two functions:
 1. a detailed summary of our assumptions and conclusions. In particular, an explanation of where we find the data of our project, how we construct the models to analyze the correlations, what our results are telling about the correlations, and some limitations why our models may not yield desirable results;
