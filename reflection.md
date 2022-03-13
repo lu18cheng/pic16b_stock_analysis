@@ -4,11 +4,21 @@
 :rocket: Team Members: Lu Cheng, Samuel Shi  
 
 ## Overall, what did you achieve in your project? 
-- In this project, we got to practice writing Python code and learned many useful skills relate to data science proejcts. We did some fun analysis and learned more about the stock market. 
-
 Our project aims to answer two questions:
 - How has the performances of growth stocks and value stocks changed over the years?
 - Are there any correlations between economic factors (such as inflation, exchange rate, and 10 year Treasury yield) and the performances of the stocks? If there's any correlation, how will growth stocks and value stocks respond respectively?
+
+We employed Time Series Modeling (TSM), in particular SARIMAX and ARIMA, to answer the first question. Based on our data (20 years of daily stock data), growth stocks can be forecasted with much better accuracy than value stocks. To answer the second question, we have employed a plethora of regression models to study the correlations and produce the results in the following table:
+
+{include an image here}
+
+Since the our neural network tensorflow models have consistently produced mininal Mean Squared Error (MSE) with little evidence of overfitting for both value and growth stocks, we chose to embed them into our webapp for the users to experiment with. 
+
+In the last step, we managed to build a webapp that delivered two functions:
+1. a detailed summary of our assumptions and conclusions. In particular, an explanation of where we find the data of our project, how we construct the models to analyze the correlations, what our results are telling about the correlations, and some limitations why our models may not yield desirable results;
+2. an interactive app to tell the users what are some predicted changes to the stock price according to our model. Specifically, users can choose to analyze a value/growth stock, then input the percentage changes of inflation rate, exchange rate against Canadian dollars, and 10 Year Treausry yield, and the program will return a predicted change of the stock price. An example has been included as follows, and we can compare how value and growth stocks can respond to certain macroeconomic changes:
+
+{include an image here}
 
 ## What are two aspects of your project that you are especially proud of? 
 
