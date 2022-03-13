@@ -1,11 +1,14 @@
-# Reflection on Project
+# Project Reflections
 ## Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
 :fire: Team Name: Litquidity  
 :rocket: Team Members: Lu Cheng, Samuel Shi  
 
-
 ## Overall, what did you achieve in your project? 
 - In this project, we got to practice writing Python code and learned many useful skills relate to data science proejcts. We did some fun analysis and learned more about the stock market. 
+
+Our project aims to answer two questions:
+- How has the performances of growth stocks and value stocks changed over the years?
+- Are there any correlations between economic factors (such as inflation, exchange rate, and 10 year Treasury yield) and the performances of the stocks? If there's any correlation, how will growth stocks and value stocks respond respectively?
 
 ## What are two aspects of your project that you are especially proud of? 
 
