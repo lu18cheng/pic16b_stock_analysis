@@ -1,4 +1,4 @@
-# Project Reflection
+# Project Reflection by Team Litquidity  
 ## Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
 :fire: Team Name: Litquidity  
 :rocket: Team Members: Lu Cheng, Samuel Shi  
@@ -35,12 +35,20 @@ There are mainly two areas that we can potentially improve our project: **data c
 <br>
 
 ## IV. How does what you achieved compare to what you set out to do in your proposal? 
-- We pretty much followed the timeline and goals set in our intial proposal. However, we won't able to obtain an accurate enough model to help us predict the market and provide meaningful insights about how the market responds to changes in macroeconomic indicators. 
+In our project proposal, we proposed to study the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations between their performance and various macroeconomic factors such as interest rates, inflation rate, GDP growth rate, etc. We are able to use time series models to model the trend of growth stock and value stock, and we built several machine learning models to predict stock performance with macroeconomic indicators as proposed. However, we aren't able to achieve high prediction accuracy with our model and thus can only limited insights about how the market performs for a given time horizon and responds to changes in macroeconomic indicators. 
+We also planned two deliverables in our project proposal.
+1. an informative webpage detailing methodologies, findings and our conclusion. 
+2. an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly. 
+We have included those in our presentation, but we have not yet made the results into a webpage. For number 2, though we made a rough interactive webapp that allows for user input for macroeconomic factors and displays predicted change in stock prices. Yet, due to the limits in our data, we are not able to develop a way for user to do scenario analysis.
+Overall, we still think we did pretty well in terms of following the timeline achieving our goals for the project. 
 
 <br>
 
 ## V. What are three things you learned from the experience of completing your project? Data analysis techniques? Python packages? Git + GitHub? Etc? 
-- We learned many useful skills through this project, from project management, communication and presentation skills, to version control (github), data base management, data visualization,  machine learning modeling and webdesign
+<!--- We learned many useful skills through this project, from project management, communication and presentation skills, to version control (github), data base management, data visualization,  machine learning modeling and webdesign-->
+- **Version control with and collaboration on git** Each step of the project is tracked using git. We experienced different types of conflicts throughout the project and learned ways to evetually resolve the conflict. 
+- **Web development** We collarborately built an interactive web app to tell the users what are some predicted changes to the stock price according to our model. The process involves learning how to save, restore and feed user input to machine learning models, as well as html, css etc. 
+- **Machine Learning & Time Series Modeling** We built several time series, machine learning and deep learning models in the project. We learned about the concepts behind the machine learning models and ways to tune the parameters to train a better model. 
 
 <br>
 
