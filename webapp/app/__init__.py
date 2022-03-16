@@ -42,16 +42,6 @@ app = Flask(__name__)
 
 @app.route('/')
 
-# def main():
-#     return render_template("main.html")
-
-# comment out the below to focus on just the fundamentals
-
-# after running
-# $ export FLASK_ENV=development; flask run
-# site will be available at 
-# http://localhost:5000
-
 def main():
     return render_template('main_better.html')
 
