@@ -4,18 +4,18 @@
 
 from flask import Flask, g, render_template, request
 
-import sklearn as sk
+# import sklearn as sk
 import matplotlib.pyplot as plt
 import numpy as np
 import pickle
 
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
+# from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+# from matplotlib.figure import Figure
 import tensorflow as tf
 from tensorflow import keras
 
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
+# from sklearn.preprocessing import LabelEncoder
+# from sklearn.model_selection import train_test_split
 # from tensorflow.keras.layers import Input, Dense, Activation,Dropout
 # from tensorflow.keras.models import Model
 # from tensorflow.keras import layers
