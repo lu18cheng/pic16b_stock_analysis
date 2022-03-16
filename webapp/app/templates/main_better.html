@@ -11,48 +11,60 @@
 
   <h2> Introduction </h2>
 
-  <p>Any individual webapp has a large number of interlocking components. That said, here's a very high-level overview of the main parts. </p>
-
-  <h3>Code</h3>
-
-  <ul>
-    <li>The <b>back end</b> is the code that executes the main computational functionality of your app. For instance, in a map application, part of the back end would be an algorithm for determining the best route between two locations. The back end usually makes heavy use of the database.</li>
-    <li>The <b>database</b> contains the information used by the app. In a map application, the database might contain tables for locations, road segments, points of interest, and so on. The database can be static, but in modern applications it's common to update the database in response to user actions. When a user submits a review, makes a friend request, or reports an incident, these might be added to the database. </li>
-    <li>The <b>front end</b> contains the logic for user interactions. In a map application, for example, the front end would need to enable the user to choose starting and end points, a transportation modality, and other inputs.</li>
-  </ul>
-
-  <h3>Infrastructure</h3>
-  <ul>
-    <li>The <b>server</b> is the process that actually executes all our code. In the map website example, the server is responsible for actually calling Python functions in response to user inputs, and updating what's shown on the app accordingly. </li> 
-    <li>The <b>browser</b> is what displays our app. In this course, we won't worry much about the browser. More advanced functionalities sometimes depend on the browser used, which means that web developers might need to take into account whether the user is on Firefox, Chrome, Safari, etc. </li>
-  </ul>
-
+  <p>Growth stock investing and value stock investing have been the most common strategies in equity investing,
+      and the debate over their effectiveness has lasted for years. In this project, we study the past stock prices to compare
+      the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations
+      between their performance and various macroeconomic factors such as interest rates, inflation rate, exchange rate, etc. We utilize the
+      two ETF indices <a href="https://www.ishares.com/us/products/239728/ishares-sp-500-value-etf">(iShare S&P 500 Value ETF)</a> and
+      <a href="https://www.ishares.com/us/products/239725/ishares-sp-500-growth-etf">(iShare S&P 500 Growth ETF)</a> to represent the performances of value stocks and growth stocks.
+      We hope our project can provide more insights for the retail investors into which strategy is more effective for a given time horizon and under various economic conditions. </p>
 
   <h2>Modeling</h2>
 
-  <p>Many modern webpages require resources involving a range of software tools: JavaScript, PHP, HTML, SQL, Ruby, and so on. We'll be using a <i>Python web framework</i>, which will allow us to achieve some reasonably interesting results using just Python and a bit of HTML. If you'd like to learn more about the range of tools for web development, you may wish to consider taking PIC40A, which devotes a full quarter to such topics. </p>
-
-  <p>Python offers a number of web frameworks. Two of the most popular options are Flask and Django.  We will be using Flask because it is simpler and easier to learn.  If you are doing a big project, you might find Django easier to manage.  Either way, the skills from one web framework are transferable to others, even though they may do things differently.</p>
-
-  <p>A lot of the information here comes from the <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask documentation</a>, in particular the Quickstart and Tutorial sections.  You may want to give these a look if this this something you're interested in.</p>
-
-  <h2>Results</h2>
+Our project aims to answer two questions:
   <ul>
-      <li>Basic back end development - how to write code that will run on your own computer or server and respond to requests and information sent from a browser</li>
-      <li>Interfacing with SQLite</li>
-      <li>Basic information on creating sessions</li>
-      <li>Basic deployment - how to make your website available to the world</li>
+      <li>How has the performances of growth stocks and value stocks changed over the years? </li>
+      <li>Are there any correlations between economic factors (such as inflation, exchange rate, and 10 year Treasury yield) and the performances of the stocks? If there's any correlation, how will growth stocks and value stocks respond respectively? </li>
+  </ul>
+<p>We employed Time Series Modeling (TSM), in particular SARIMAX and ARIMA, to answer the first question. Based on our data (20 years of daily stock data), growth stocks can be forecasted with much better accuracy than value stocks. To answer the second question, we have employed a plethora of regression models to study the correlations and produce the results in the following table:</p>
+<img src="/static/model_result.png" alt="model result"style="width:600px;height:400px;"
+>
+<p>Since our neural network models have consistently produced mininal Mean Squared Error (MSE) with little evidence of overfitting for both value and growth stocks, we chose to embed them into our webapp for the users to experiment with.</p>
+<p>In the last step, we managed to build a webapp that serves two functions:</p>
+  <ul>
+      <li>a detailed summary of our assumptions and conclusions. In particular, an explanation of where we find the data of our project, how we construct the models to analyze the correlations, what our results are telling about the correlations, and some limitations why our models may not yield desirable results;</li>
+      <li> an interactive app (this webapp) to tell the users what are some predicted changes to the stock price according to our model. Specifically, users can choose to analyze a value/growth stock, then input the percentage changes of inflation rate, exchange rate against Canadian dollars, and 10 Year Treausry yield, and the program will return a predicted change of the stock price.</li>
   </ul>
 
-  <h2>Conclusion</h2>
+
+  <h2>Discussion</h2>
+    <p>In this project we were able to make some achievements that we are especially proud of </p>
   <ul>
-      <li>Web design - how to change how your website looks visually and make it look appealing</li>
-      <li>Front end development - how to write code that will run on someone else's browser</li>
-      <li>Security - how to minimize the risk of information from your website being compromised, or of your website being used to inject malicious code into the computers of visitors.</li>
+      <li> <b>We managed to utilize data science techniques to develop better understanding of the stock market</b>: Most of our previous experiences with stock market and investing are qualitative. By finishing this project, we have become more aware of, for stock market analysis, where to collect data, how to process data cleaning, and what are some specific data sciences techniques that are available for such issues. In particular, it confirms our belief that modeling stock markets is indeed challenging. Moreover, it provides a new angle of investing into the secondary markets, and tells us what are some advantages and drawbacks of using data science and machine learning techniques to study the stock market. </li>
+      <li> <b>We built an interactive webapp that might impact a user's decision in real life</b>we regard a piece of information to be "valuable" if it contributes to an individual's decision in real life, directly or indirectly. The webapp can help retail investors to better understand market dynamics and stock returns with acceptable margins of error *(0.8% for value stocks and 1% for growth stocks)*. Although it can hardly provide direct buy or sell suggestions, it offers a scientific way to examine the impacts of various macroeconomic factors on stock performances. Retail investors or other potential users can develop a better understanding of the correlations and make more informed decisions. </li>
   </ul>
 
-  <p>
-    I'd like to emphasize the last item about security. Once we're done with this sequence, you'll be able to build <i>fun</i> web applications and deploy them. You should absolutely <b>not</b> store any sensitive information in these applications, and you should using only well-known, secure hosting services. If you'd like to deal with any kind of secure information (user names, addresses, credit card numbers, etc) then please pursue advanced coursework devoted to web development. 
-  </p>
+<p>
+    Yet, there are still some limitations with our data and models and thus we are not able to develop a way for users to conduct scenario analysis.
+    In the future, we hope to further improve on <b>data collection</b> and <b>modeling</b> </p>
+<p> Due to time constraint, we chose IVE and IVW as two indices to represent the overall performances of growth stocks and value stocks. One drawback is that both of these indices were created in 2003, which gives us *only around 20 years of data*. In reality, the debate between growth stocks and value stocks dated even before the Great Depression in the 1930s. A more scientific way is to find certain metrics to individually select stocks to construct a portofolio for growth stocks and value stocks respectively since 1930 instead of using generic metrics that only have spanned 20 years. </p>
+<p>
+     We may also be able to improve our models by better tuning the parameter. For instance, SARIMAX and ARIMA might not be the best models for stock markets. Different TSM might be used for short term vs. long term predictions. Additionally, with some literature review, we can potentially find some models tackling similar problems. We can use transfer learning and other methods to improve our accuracy.
+</p>
 
+  <h2>Conclusions</h2>
+<p>Our time series model does not give definite answers to the future performances for Value Stocks and Growth Stocks, especially for the case of value stocks. Stock prices are indeed challenging to model and do not generally yield results solely based on statistical results.
+</p>
+<p>
+    Based on our results, the correlation between stock performances and the indicators we identified are relatively weak, potentially due to:
+</p>
+<ul>
+    <li>Insufficient data (only 20 years’ data are incorporated, should include at least 50+ years)</li>
+    <li>Missing variables (more macroeconomic factors can be incorporated)</li>
+    <li>Imperfect models</li>
+</ul>
+However, our models can still provide meaningful guidance to the extent of changes for growth vs. value stocks should one of the economic indicators change.
+
+<h2> Final Remark</h2>
+<i>This project is for educational and informational purposes only. The information contained does not constitute financial advice, investment advice, trading advice or any other advice. All Content from this presentation is information of a general nature and does not address the circumstances of any particular individual or entity.</i>
 {% endblock %}
