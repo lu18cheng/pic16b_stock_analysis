@@ -6,7 +6,7 @@ Growth stock investing and value stock investing have been the most common strat
 
 <br>
 
-This repository includes all the code to the analysis. 
+### This repository includes all the code to the analysis. 
 - `proposal.md` includes the initial project proposal.
 - `economy_data` and `stock_data` folders include the stock prices data (the two ETF indices mentioned above) we found for the past 20 years from [Yahoo Finance](https://finance.yahoo.com/) and data for macroeconomic indicators for the past 50 years from [Federal Reserve's website](https://fred.stlouisfed.org/).
 - `db` folder includes the database we built with the data.
@@ -16,7 +16,7 @@ This repository includes all the code to the analysis.
 
 <br>
 
-Conclusive Thoughts:
+### Conclusive Thoughts:
 - Our time series model does not give definite answers to the future performances for Value Stocks and Growth Stocks, especially for the case of value stocks. Stock prices are indeed challenging to model and do not generally yield results solely based on statistical results.
 - Based on our results, the correlation between stock performances and the indicators we identified are relatively weak, potentially due to:
     - Insufficient data (only 20 years’ data are incorporated, should include at least 50+ years)
@@ -26,6 +26,6 @@ Conclusive Thoughts:
 
 <br>
 
-Final Remark: <br>
+### Final Remark: <br>
 *This project is for educational and informational purposes only. The information contained does not constitute financial advice, investment advice, trading advice or any other advice. All Content from this presentation is information of a general nature and does not address the circumstances of any particular individual or entity.*
 
