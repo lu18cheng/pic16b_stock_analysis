@@ -2,7 +2,7 @@
 ## Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
 :fire: Team Name: Litquidity  
 :rocket: Team Members: Lu Cheng, Samuel Shi  
-*(We work on the first 5 parts collectively and the part VI individually)*
+*(We work on the first 5 parts collectively and part VI individually)*
 
 ## I. Overall, what did you achieve in your project? 
 Our project aims to answer two questions:
