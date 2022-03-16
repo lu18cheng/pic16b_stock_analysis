@@ -2,6 +2,7 @@
 ## Growth Stocks vs. Value Stocks :money_with_wings::money_with_wings::money_with_wings:
 :fire: Team Name: Litquidity  
 :rocket: Team Members: Lu Cheng, Samuel Shi  
+*(We work on the first 5 parts collectively and the part VI individually)*
 
 ## I. Overall, what did you achieve in your project? 
 Our project aims to answer two questions:
@@ -19,6 +20,7 @@ In the last step, we managed to build a webapp that serves two functions:
 2. an interactive app to tell the users what are some predicted changes to the stock price according to our model. Specifically, users can choose to analyze a value/growth stock, then input the percentage changes of inflation rate, exchange rate against Canadian dollars, and 10 Year Treausry yield, and the program will return a predicted change of the stock price. An example has been included as follows, and we can compare how value and growth stocks can respond to certain macroeconomic changes:
 
 {include an image here}
+
 <br>
 
 ## II. What are two aspects of your project that you are especially proud of? 
@@ -35,11 +37,11 @@ There are mainly two areas that we can potentially improve our project: **data c
 <br>
 
 ## IV. How does what you achieved compare to what you set out to do in your proposal? 
-In our project proposal, we proposed to study the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations between their performance and various macroeconomic factors such as interest rates, inflation rate, GDP growth rate, etc. We are able to use time series models to model the trend of growth stock and value stock, and we built several machine learning models to predict stock performance with macroeconomic indicators as proposed. However, we aren't able to achieve high prediction accuracy with our model and thus can only limited insights about how the market performs for a given time horizon and responds to changes in macroeconomic indicators. 
+In our project proposal, we proposed to study the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations between their performance and various macroeconomic factors such as interest rates, inflation rate, etc. We are able to use time series models to model the trend of growth stock and value stock, and we built several machine learning models to predict stock performance with macroeconomic indicators as proposed. However, we aren't able to achieve high prediction accuracy with our model and thus can only have limited insights about how the market performs for a given time horizon and responds to changes in macroeconomic indicators. 
 We also planned two deliverables in our project proposal.
 1. an informative webpage detailing methodologies, findings and our conclusion. 
 2. an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly. 
-We have included those in our presentation, but we have not yet made the results into a webpage. For number 2, though we made a rough interactive webapp that allows for user input for macroeconomic factors and displays predicted change in stock prices. Yet, due to the limits in our data, we are not able to develop a way for user to do scenario analysis.
+We have included those in our presentation, but due to time constriants, we have not managed to include a full report with methodologies, findings, and conclusions into a webpage. For number 2, though we made a rough interactive webapp that allows for user input for macroeconomic factors and displays predicted change in stock prices. Yet, due to the limits in our data, we are not able to develop a way for users to conduct scenario analysis.
 Overall, we still think we did pretty well in terms of following the timeline achieving our goals for the project. 
 
 <br>
@@ -53,4 +55,5 @@ Overall, we still think we did pretty well in terms of following the timeline ac
 <br>
 
 ## VI. How will your experience completing this project will help you in your future studies or career? Please be as specific as possible. 
-- This experience is helpful to help us prepare for a data science career as it mimics the process of a complete data science project in a real life experience. In actual working setting, we imagine most projects would go through the process of proposal -> data collection & cleaning -> actual analysis -> presentation of results. Version control with git is also a crucial tool in working setting. Moreover, many of the difficulties we encounter in this project could be similar to what we may encounter in real life. Being able to detect where the issues come from and exploring ways to solve it is a useful skill to have when working on industry projects. 
+- For Lu: This experience is helpful to help us prepare for a data science career as it mimics the process of a complete data science project in a real life experience. In actual working setting, we imagine most projects would go through the process of proposal -> data collection & cleaning -> actual analysis -> presentation of results. Version control with git is also a crucial tool in working setting. Moreover, many of the difficulties we encounter in this project could be similar to what we may encounter in real life. Being able to detect where the issues come from and exploring ways to solve it is a useful skill to have when working on industry projects. 
+- For Samuel: Frankly speaking, much of the experiences will not be relevant with my career path at least in a short term, since I will be mainly working on primary market investing upon graduation. Nevertheless, the project has not only reshaped my understanding of data science methodologies, but also teaches me the intricacies of data preparation, analysis, and evaluation. It allows me to develop a more holistic view of how data science and machine learning can be applied in real life scenarios and what current trends, opportunities, controversies and obstacles are in these fields. As I am always intrigued by the interactions among business, technology, and societies, these experiences will contribute a small but pivotal piece to my overall mental framework. Therefore, the project will certainly fit my long term goal of understanding what "value" means for different stakeholders and how to create sustainable "values" for teams, organizations, and companies. 
