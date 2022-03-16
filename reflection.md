@@ -40,7 +40,8 @@ There are mainly two areas that we can potentially improve our project: **data c
 In our project proposal, we proposed to study the performance of growth stocks vs. value stocks over different periods and use machine learning models to examine the correlations between their performance and various macroeconomic factors such as interest rates, inflation rate, etc. We are able to use time series models to model the trend of growth stock and value stock, and we built several machine learning models to predict stock performance with macroeconomic indicators as proposed. However, we aren't able to achieve high prediction accuracy with our model and thus can only have limited insights about how the market performs for a given time horizon and responds to changes in macroeconomic indicators. 
 We also planned two deliverables in our project proposal.
 1. an informative webpage detailing methodologies, findings and our conclusion. 
-2. an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly. 
+2. an interactive interface so that users can do various scenario analysis to adjust their portfolio accordingly.   
+
 We have included those in our presentation, but due to time constriants, we have not managed to include a full report with methodologies, findings, and conclusions into a webpage. For number 2, though we made a rough interactive webapp that allows for user input for macroeconomic factors and displays predicted change in stock prices. Yet, due to the limits in our data, we are not able to develop a way for users to conduct scenario analysis.
 Overall, we still think we did pretty well in terms of following the timeline achieving our goals for the project. 
 
